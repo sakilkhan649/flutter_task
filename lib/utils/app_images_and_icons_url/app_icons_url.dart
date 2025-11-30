@@ -9,6 +9,7 @@ class AppIcons{
   static const String course="$iconurl/course.svg";
   static const String quiz="$iconurl/quiz.svg";
   static const String profile="$iconurl/profile.svg";
+  static const String search="$iconurl/searchicon.svg";
 
 
 

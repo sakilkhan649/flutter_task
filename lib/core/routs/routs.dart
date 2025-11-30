@@ -3,7 +3,7 @@ import 'package:flutter_task/views/auth/signup/singuppage.dart';
 import 'package:flutter_task/views/course/personalizingpage.dart';
 import 'package:flutter_task/views/homepage/homepage.dart';
 import 'package:flutter_task/views/homepage/pages/course_page.dart';
-import 'package:flutter_task/views/homepage/pages/home_active_page.dart';
+import 'package:flutter_task/views/homepage/pages/homepages/home_active_page.dart';
 import 'package:flutter_task/views/homepage/pages/profile_page.dart';
 import 'package:flutter_task/views/homepage/pages/quiz_page.dart';
 import 'package:flutter_task/views/homepage/pages/shorts_page.dart';

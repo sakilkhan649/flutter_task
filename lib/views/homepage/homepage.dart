@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_task/utils/app_images_and_icons_url/app_icons_url.dart';
 import 'package:flutter_task/views/homepage/pages/course_page.dart';
-import 'package:flutter_task/views/homepage/pages/home_active_page.dart';
+import 'package:flutter_task/views/homepage/pages/homepages/home_active_page.dart';
 import 'package:flutter_task/views/homepage/pages/profile_page.dart';
 import 'package:flutter_task/views/homepage/pages/quiz_page.dart';
 import 'package:flutter_task/views/homepage/pages/shorts_page.dart';
