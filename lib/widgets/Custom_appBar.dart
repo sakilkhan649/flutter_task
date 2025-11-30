@@ -1,0 +1,54 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
+  final String title;
+  final List<Widget>? actions;
+  final Widget? leading;
+  final Color? backgroundColor;
+  final Color? titleColor;
+  final bool centerTitle;
+  final double elevation;
+  final PreferredSizeWidget? bottom;
+  final double toolbarHeight;
+  final bool automaticallyImplyLeading;
+
+  const CustomAppBar({
+    super.key,
+    required this.title,
+    this.actions,
+    this.leading,
+    this.backgroundColor,
+    this.titleColor,
+    this.centerTitle = true,
+    this.elevation = 0,
+    this.bottom,
+    this.toolbarHeight = kToolbarHeight,
+    this.automaticallyImplyLeading=true,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return AppBar(
+      automaticallyImplyLeading: automaticallyImplyLeading,
+      toolbarHeight: toolbarHeight,
+      title: Text(
+        title,
+        style: TextStyle(
+          color: titleColor ?? Colors.black,
+          fontSize: 22.sp,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      leading: leading,
+      actions: actions,
+      backgroundColor: backgroundColor ?? Colors.white,
+      centerTitle: centerTitle,
+      elevation: elevation,
+    );
+  }
+
+  @override
+  Size get preferredSize =>
+      Size.fromHeight(toolbarHeight + (bottom?.preferredSize.height ?? 0));
+}
